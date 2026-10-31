@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sister Rock Homes | Furnished Rentals in Augusta, GA</title>
+<meta name="description" content="Fully furnished short-term and mid-term rentals in historic Olde Town Augusta, Georgia. Extended-stay rentals, corporate housing and traveling professional accommodations near downtown and the Riverwalk.">
+<meta name="keywords" content="furnished rentals Augusta GA, mid-term rentals Augusta, short-term furnished homes Augusta, Augusta corporate housing, traveling professional accommodations Augusta, extended-stay rentals Augusta Georgia, Masters week rental">
+<meta property="og:title" content="Sister Rock Homes | Furnished Rentals in Augusta, GA">
+<meta property="og:description" content="Thoughtfully furnished homes in historic Olde Town Augusta for short and extended stays.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ivory:#FAF6EF;--cream:#F3ECE0;--beige:#E7DCCB;--sage:#8C9C80;--sage-d:#5E6E55;--sage-l:#DDE3D6;--char:#2D2D2B;--muted:#6B6862;--gold:#B49556;--gold-l:#E9DDC3;--r:14px;--sh:0 10px 30px rgba(45,45,43,.08)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--char);background:var(--ivory);line-height:1.65;font-weight:400;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.15;letter-spacing:.2px}
+h1{font-size:clamp(2.4rem,5.5vw,4.2rem)}h2{font-size:clamp(2rem,3.6vw,2.9rem)}h3{font-size:1.6rem}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.eyebrow{font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:12px;display:block}
+.lead{font-size:1.08rem;color:var(--muted);max-width:680px}
+.center{text-align:center}.center .lead{margin:0 auto}
+section{padding:88px 0}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:999px;font-weight:500;font-size:.92rem;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:all .25s ease;font-family:inherit;letter-spacing:.02em}
+.btn-primary{background:var(--sage-d);color:#fff}.btn-primary:hover{background:var(--char);transform:translateY(-2px)}
+.btn-gold{background:var(--gold);color:#fff}.btn-gold:hover{background:#9c7f45;transform:translateY(-2px)}
+.btn-outline{border-color:var(--char);color:var(--char);background:transparent}.btn-outline:hover{background:var(--char);color:#fff}
+.btn-light{border-color:#fff;color:#fff}.btn-light:hover{background:#fff;color:var(--char)}
+.btn svg{width:18px;height:18px;flex:0 0 18px}
+.btn-sm{padding:10px 18px;font-size:.85rem}
+/* NAV */
+header{position:sticky;top:0;z-index:50;background:rgba(250,246,239,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--beige)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-mark{width:38px;height:38px;border-radius:50%;background:var(--sage-d);display:grid;place-items:center;color:var(--gold-l);font-family:"Cormorant Garamond",serif;font-size:1.25rem;font-weight:600}
+.logo-text{font-family:"Cormorant Garamond",serif;font-size:1.45rem;font-weight:600;line-height:1}
+.logo-text small{display:block;font-family:Inter,sans-serif;font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-top:3px}
+.nav ul{display:flex;list-style:none;gap:26px;align-items:center}
+.nav ul a{text-decoration:none;font-size:.9rem;color:var(--char);position:relative;padding:4px 0}
+.nav ul a:after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:1.5px;background:var(--gold);transition:width .25s}
+.nav ul a:hover:after,.nav ul a.active:after{width:100%}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.burger span{display:block;width:24px;height:2px;background:var(--char);margin:5px 0;transition:.3s}
+@media(max-width:980px){.nav ul{position:fixed;top:76px;left:0;right:0;background:var(--ivory);flex-direction:column;padding:24px;gap:18px;border-bottom:1px solid var(--beige);transform:translateY(-130%);transition:transform .35s;box-shadow:var(--sh)}
+.nav ul.open{transform:none}.burger{display:block}.nav .nav-cta{display:none}}
+/* HERO */
+.hero{position:relative;min-height:88vh;display:flex;align-items:center;color:#fff;overflow:hidden;padding:0}
+.hero-slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.6s ease;transform:scale(1.04)}
+.hero-slide.on{opacity:1;animation:kb 9s ease forwards}
+@keyframes kb{to{transform:scale(1)}}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(30,32,28,.72) 0%,rgba(30,32,28,.35) 60%,rgba(30,32,28,.15));z-index:1}
+.hero-in{position:relative;z-index:2;max-width:720px}
+.hero h1{margin-bottom:20px}.hero p{font-size:1.12rem;opacity:.92;margin-bottom:34px;max-width:620px}
+.hero .eyebrow{color:var(--gold-l)}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.hero-dots{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);z-index:2;display:flex;gap:10px}
+.hero-dots button{width:34px;height:3px;border:0;background:rgba(255,255,255,.4);cursor:pointer}
+.hero-dots button.on{background:var(--gold-l)}
+.hero-cap{position:absolute;right:28px;bottom:26px;z-index:2;font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;opacity:.85}
+/* INTRO / FEATURES */
+.intro{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center}
+.intro-img{position:relative}.intro-img img{border-radius:var(--r);aspect-ratio:4/5;object-fit:cover;width:100%}
+.intro-img .badge{position:absolute;left:-24px;bottom:34px;background:var(--ivory);padding:18px 22px;border-radius:12px;box-shadow:var(--sh)}
+.badge b{font-family:"Cormorant Garamond",serif;font-size:2rem;color:var(--sage-d);display:block;line-height:1}
+.badge span{font-size:.78rem;color:var(--muted)}
+.stats{display:flex;gap:36px;margin-top:30px;flex-wrap:wrap}
+.stats div b{font-family:"Cormorant Garamond",serif;font-size:2.1rem;color:var(--sage-d);display:block;line-height:1}
+.stats div span{font-size:.8rem;color:var(--muted);letter-spacing:.04em}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+.feat{background:#fff;border:1px solid var(--beige);border-radius:var(--r);padding:30px;transition:all .3s}
+.feat:hover{transform:translateY(-4px);box-shadow:var(--sh);border-color:var(--gold-l)}
+.ico{width:52px;height:52px;border-radius:50%;background:var(--sage-l);display:grid;place-items:center;margin-bottom:18px;color:var(--sage-d)}
+.ico svg{width:24px;height:24px}
+.feat h4{font-size:1.35rem;margin-bottom:6px}.feat p{font-size:.92rem;color:var(--muted)}
+@media(max-width:900px){.intro{grid-template-columns:1fr}.features{grid-template-columns:1fr 1fr}.intro-img .badge{left:16px}}
+@media(max-width:560px){.features{grid-template-columns:1fr}}
+.bg-cream{background:var(--cream)}.bg-sage{background:var(--sage-d);color:#fff}.bg-char{background:var(--char);color:#fff}
+/* PROPERTY CARDS */
+.filters{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:34px 0 40px}
+.chip{padding:9px 18px;border-radius:999px;border:1px solid var(--beige);background:#fff;font-size:.85rem;cursor:pointer;font-family:inherit;transition:.2s}
+.chip.on,.chip:hover{background:var(--char);color:#fff;border-color:var(--char)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:28px}
+.card{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--beige);display:flex;flex-direction:column;transition:all .35s}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(45,45,43,.12)}
+.card-img{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--beige)}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.card:hover .card-img img{transform:scale(1.06)}
+.tag{position:absolute;top:14px;left:14px;background:rgba(250,246,239,.95);padding:6px 12px;border-radius:999px;font-size:.72rem;font-weight:600;letter-spacing:.04em}
+.tag.gold{background:var(--gold);color:#fff;left:auto;right:14px}
+.card-b{padding:24px;display:flex;flex-direction:column;flex:1}
+.meta{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--sage-d);font-weight:600;margin-bottom:6px}
+.card h3{margin-bottom:8px}.card p{font-size:.93rem;color:var(--muted);margin-bottom:16px}
+.amen-mini{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:22px}
+.amen-mini span{font-size:.75rem;background:var(--cream);padding:5px 10px;border-radius:6px}
+.card-btns{display:flex;gap:10px;margin-top:auto;flex-wrap:wrap}
+.rating{font-size:.82rem;color:var(--char);display:flex;align-items:center;gap:4px;margin-bottom:8px}
+.rating svg{width:14px;height:14px;color:var(--gold)}
+/* MASTERS */
+.masters{display:grid;grid-template-columns:1fr 1fr;border-radius:var(--r);overflow:hidden;background:var(--char);color:#fff}
+.masters img{width:100%;height:100%;object-fit:cover;min-height:340px}
+.masters-b{padding:56px}.masters-b .eyebrow{color:var(--gold-l)}.masters-b p{opacity:.85;margin:16px 0 26px}
+@media(max-width:860px){.masters{grid-template-columns:1fr}.masters-b{padding:36px}}
+/* REVIEWS */
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:46px}
+.rev{background:#fff;border-radius:var(--r);padding:30px;border:1px solid var(--beige);position:relative}
+.rev:before{content:"\201C";font-family:"Cormorant Garamond",serif;font-size:4.4rem;color:var(--gold-l);position:absolute;top:2px;left:22px;line-height:1}
+.rev p{font-size:.95rem;margin:30px 0 18px}.rev b{display:block;font-size:.9rem}.rev small{color:var(--muted);font-size:.78rem}
+@media(max-width:900px){.reviews{grid-template-columns:1fr}}
+/* PAGE HEAD */
+.phead{padding:80px 0 56px;background:var(--cream);text-align:center;border-bottom:1px solid var(--beige)}
+.phead .lead{margin:14px auto 0}
+.crumb{font-size:.82rem;color:var(--muted);margin-bottom:16px}.crumb a{text-decoration:none;color:var(--sage-d)}
+/* DETAIL */
+.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:240px 240px;gap:10px;border-radius:var(--r);overflow:hidden;position:relative}
+.gallery img{width:100%;height:100%;object-fit:cover;cursor:zoom-in;transition:filter .3s,transform .5s;background:var(--beige)}
+.gallery img:hover{filter:brightness(.88)}
+.gallery img:first-child{grid-row:1/3}
+.gallery .all{position:absolute;right:16px;bottom:16px}
+@media(max-width:760px){.gallery{grid-template-columns:1fr 1fr;grid-template-rows:260px 140px}.gallery img:first-child{grid-column:1/3;grid-row:auto}.gallery img:nth-child(n+4){display:none}}
+.thumbs{display:flex;gap:8px;overflow-x:auto;padding:14px 0 4px;scrollbar-width:thin}
+.thumbs button{flex:0 0 auto;border:0;padding:0;background:none;cursor:pointer;text-align:center}
+.thumbs img{width:110px;height:78px;object-fit:cover;border-radius:8px;opacity:.85;transition:.2s}
+.thumbs img:hover{opacity:1;transform:translateY(-2px)}
+.thumbs span{font-size:.68rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.detail{display:grid;grid-template-columns:1.6fr 1fr;gap:56px;margin-top:48px;align-items:start}
+@media(max-width:960px){.detail{grid-template-columns:1fr}}
+.facts{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0 26px}
+.facts span{background:#fff;border:1px solid var(--beige);padding:8px 14px;border-radius:999px;font-size:.85rem}
+.block{padding:34px 0;border-top:1px solid var(--beige)}
+.block h3{margin-bottom:16px}
+.block p{color:#4a4844;margin-bottom:12px}
+.hl{display:grid;grid-template-columns:1fr 1fr;gap:10px 22px;list-style:none}
+.hl li{display:flex;gap:10px;font-size:.94rem;align-items:flex-start}.hl li svg{flex:0 0 18px;width:18px;height:18px;color:var(--sage-d);margin-top:3px}
+.amen-groups{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.amen-g h4{font-family:Inter,sans-serif;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sage-d);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.amen-g h4 svg{width:18px;height:18px}
+.amen-g ul{list-style:none}.amen-g li{font-size:.92rem;padding:6px 0;border-bottom:1px dashed var(--beige)}
+@media(max-width:600px){.hl,.amen-groups{grid-template-columns:1fr}}
+.rules{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.rule{display:flex;gap:12px;background:#fff;border:1px solid var(--beige);border-radius:10px;padding:14px;font-size:.9rem;align-items:flex-start}
+.rule svg{width:20px;height:20px;flex:0 0 20px;color:var(--gold)}
+.side{position:sticky;top:100px;background:#fff;border:1px solid var(--beige);border-radius:var(--r);padding:30px;box-shadow:var(--sh)}
+.side h3{font-size:1.5rem;margin-bottom:4px}.side .sub{font-size:.85rem;color:var(--muted);margin-bottom:18px}
+.side .btn{width:100%;justify-content:center;margin-top:10px}
+.note{font-size:.78rem;color:var(--muted);margin-top:14px;text-align:center}
+.alert{background:var(--gold-l);border-left:4px solid var(--gold);padding:16px 18px;border-radius:8px;font-size:.9rem;margin:18px 0}
+/* FORMS */
+form .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:560px){form .row{grid-template-columns:1fr}}
+label{display:block;font-size:.78rem;font-weight:600;letter-spacing:.04em;margin-bottom:6px;color:var(--char)}
+label .opt{font-weight:400;color:var(--muted)}
+input,select,textarea{width:100%;padding:12px 14px;border:1px solid var(--beige);border-radius:10px;font-family:inherit;font-size:.92rem;background:var(--ivory);color:var(--char);transition:border .2s,box-shadow .2s}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--sage);box-shadow:0 0 0 3px var(--sage-l)}
+.field{margin-bottom:14px}
+textarea{min-height:110px;resize:vertical}
+.form-card{background:#fff;border:1px solid var(--beige);border-radius:var(--r);padding:36px;box-shadow:var(--sh)}
+.form-msg{display:none;margin-top:14px;padding:14px;border-radius:10px;background:var(--sage-l);font-size:.9rem}
+/* LIGHTBOX */
+.lb{position:fixed;inset:0;background:rgba(20,20,18,.95);z-index:100;display:none;align-items:center;justify-content:center;flex-direction:column}
+.lb.open{display:flex}
+.lb img{max-width:92vw;max-height:80vh;border-radius:6px;object-fit:contain}
+.lb button{position:absolute;background:rgba(255,255,255,.12);border:0;color:#fff;width:52px;height:52px;border-radius:50%;cursor:pointer;font-size:1.5rem;transition:.2s}
+.lb button:hover{background:rgba(255,255,255,.25)}
+.lb .x{top:20px;right:20px}.lb .pv{left:20px;top:50%}.lb .nx{right:20px;top:50%}
+.lb .cap{color:#ddd;margin-top:16px;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase}
+/* EXPLORE / INFO */
+.cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:22px}
+.cat{background:#fff;border:1px solid var(--beige);border-radius:var(--r);padding:28px}
+.cat h4{font-size:1.4rem;margin-bottom:12px;display:flex;align-items:center;gap:12px}
+.cat h4 .ico{margin:0;width:42px;height:42px}
+.cat ul{list-style:none}.cat li{padding:9px 0;border-bottom:1px dashed var(--beige);font-size:.92rem;display:flex;justify-content:space-between;gap:10px}
+.cat li em{color:var(--muted);font-style:normal;font-size:.8rem;white-space:nowrap}
+.ph{color:var(--muted);font-style:italic}
+.map{border-radius:var(--r);overflow:hidden;border:1px solid var(--beige);height:420px;background:var(--beige)}
+.map iframe{width:100%;height:100%;border:0}
+table.fees{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--r);overflow:hidden;font-size:.92rem}
+.fees th,.fees td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--beige)}
+.fees th{background:var(--sage-d);color:#fff;font-weight:500;letter-spacing:.04em}
+.faq details{background:#fff;border:1px solid var(--beige);border-radius:12px;margin-bottom:12px;padding:0 22px}
+.faq summary{cursor:pointer;padding:18px 0;font-weight:500;list-style:none;display:flex;justify-content:space-between;align-items:center}
+.faq summary:after{content:"+";font-size:1.4rem;color:var(--gold);transition:.2s}
+.faq details[open] summary:after{transform:rotate(45deg)}
+.faq details p{padding:0 0 18px;color:var(--muted);font-size:.93rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+@media(max-width:900px){.two{grid-template-columns:1fr}}
+.contact-list{list-style:none;margin:26px 0}.contact-list li{display:flex;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--beige)}
+.contact-list .ico{margin:0;width:44px;height:44px}
+/* CTA band + FOOTER */
+.cta{text-align:center;padding:90px 0;background:linear-gradient(rgba(45,50,40,.78),rgba(45,50,40,.78)) center/cover;color:#fff}
+.cta p{opacity:.88;margin:14px auto 30px;max-width:560px}
+footer{background:var(--char);color:#cfcac0;padding:70px 0 30px;font-size:.9rem}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
+footer h5{font-family:Inter,sans-serif;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-l);margin-bottom:16px}
+footer ul{list-style:none}footer li{margin-bottom:9px}footer a{text-decoration:none;color:#cfcac0}footer a:hover{color:#fff}
+footer .logo-text{color:#fff}
+.foot-b{border-top:1px solid #444;margin-top:48px;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.8rem}
+.share{display:flex;gap:10px;margin-top:18px}
+.share a,.share button{width:38px;height:38px;border-radius:50%;border:1px solid #555;display:grid;place-items:center;background:none;color:#cfcac0;cursor:pointer}
+.share a:hover,.share button:hover{border-color:var(--gold);color:var(--gold-l)}
+.share svg{width:16px;height:16px}
+@media(max-width:860px){.foot{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.foot{grid-template-columns:1fr}section{padding:64px 0}}
+/* image fallback */
+img.noimg{background:linear-gradient(135deg,var(--beige),var(--cream));}
+.fade{opacity:0;transform:translateY(18px);transition:all .8s ease}.fade.in{opacity:1;transform:none}
+.legal h3{margin:28px 0 10px}.legal p{color:#4a4844;margin-bottom:10px}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;z-index:200;background:#fff;padding:10px}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <div class="wrap nav">
+    <a href="#/" class="logo" aria-label="Sister Rock Homes home"><span class="logo-mark">SR</span><span class="logo-text">Sister Rock Homes<small>Augusta, Georgia</small></span></a>
+    <nav aria-label="Main">
+      <ul id="menu">
+        <li><a href="#/">Home</a></li>
+        <li><a href="#/properties">Our Properties</a></li>
+        <li><a href="#/about">About Us</a></li>
+        <li><a href="#/explore">Explore Augusta</a></li>
+        <li><a href="#/guest-info">Guest Information</a></li>
+        <li><a href="#/contact">Contact</a></li>
+        <li><a href="#/availability" class="btn btn-gold btn-sm" style="color:#fff">Check Availability</a></li>
+      </ul>
+    </nav>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main"></main>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="x" onclick="closeLB()" aria-label="Close">×</button>
+  <button class="pv" onclick="stepLB(-1)" aria-label="Previous photo">‹</button>
+  <img id="lbImg" alt="">
+  <div class="cap" id="lbCap"></div>
+  <button class="nx" onclick="stepLB(1)" aria-label="Next photo">›</button>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="logo" style="margin-bottom:16px"><span class="logo-mark">SR</span><span class="logo-text">Sister Rock Homes</span></div>
+        <p>Thoughtfully furnished short-term and mid-term rentals in historic Olde Town Augusta, Georgia.</p>
+        <div class="share" id="share"></div>
+      </div>
+      <div><h5>Explore</h5><ul><li><a href="#/properties">Our Properties</a></li><li><a href="#/availability">Check Availability</a></li><li><a href="#/explore">Explore Augusta</a></li><li><a href="#/about">About Us</a></li></ul></div>
+      <div><h5>Our Homes</h5><ul id="footProps"></ul></div>
+      <div><h5>Guests</h5><ul><li><a href="#/guest-info">Guest Information</a></li><li><a href="#/guest-info">FAQ</a></li><li><a href="#/contact">Contact</a></li><li id="footEmail"></li><li id="footPhone"></li></ul></div>
+    </div>
+    <div class="foot-b"><span>© <span id="yr"></span> Sister Rock Homes · Augusta, Georgia</span><span><a href="#/privacy">Privacy Policy</a> &nbsp;·&nbsp; <a href="#/terms">Terms</a></span></div>
+  </div>
+</footer>
+
+<script>
+/* =====================================================================
+   SISTER ROCK HOMES — SITE SETTINGS & PROPERTY DATA
+   Edit this block to update the website. Everything below is pulled
+   from the live Airbnb listings (Oct 30, 2026) unless marked [PLACEHOLDER].
+   To add a property: copy one object in PROPERTIES and change its values.
+   ===================================================================== */
+const SITE = {
+  name: "Sister Rock Homes",
+  email: "",            // [PLACEHOLDER] e.g. "stay@sisterrockhomes.com" — inquiries are sent here
+  phone: "",            // [PLACEHOLDER] e.g. "(706) 555-0123"
+  responseTime: "",     // [PLACEHOLDER] e.g. "within a few hours"
+  social: { instagram: "", facebook: "", tiktok: "" }, // [PLACEHOLDER] full URLs; blank = hidden
+  showHostIntro: false, // set true once Sandra approves her intro + photo
+  hostPhoto: "",        // [PLACEHOLDER] image URL for Sandra's photo
+  hostIntro: "Hello! My husband and I love spending time walking, watching movies and traveling. We love staying in Airbnbs and are hosts ourselves. We strive to provide cozy retreats and excellent service for our guests.",
+  checkIn: "After 4:00 PM",
+  checkOut: "Before 10:00 AM",
+  mastersDates: "April 8–11, 2027",
+  hostStats: { superhost: true, rating: "4.97", reviews: 72, years: 3 }
+};
+
+const IMG = "https://a0.muscache.com/im/pictures/";
+
+const PROPERTIES = [
+{
+  slug: "southern-pearl",
+  name: "The Southern Pearl",
+  short: "Southern Pearl",
+  beds: 1, baths: "1", unit: "Second-level unit", guests: 4, bedLabel: "1 Bedroom | 1 Bathroom | Upper-Level Unit",
+  tagline: "A charming, thoughtfully furnished retreat with 10-foot ceilings and historic Olde Town character.",
+  stay: ["short","mid"],
+  rating: "4.95", reviewCount: 19,
+  airbnb: "https://airbnb.com/h/thesouthernpearl-b",
+  furnishedFinder: "", // [PLACEHOLDER] add listing URL to show the button
+  ideal: "Traveling professionals, couples, extended stays and Masters visitors. Ideal for 2; sleeps up to 4 with the pull-out sofa (max 2 guests for 30+ day stays).",
+  description: [
+    "The Southern Pearl is a beautifully furnished one-bedroom, one-bath apartment on the second level of a charming four-unit historic property in Olde Town Augusta. Ten-foot ceilings, abundant natural light and decorative fireplaces meet modern technology and everything you need for a comfortable short or extended stay.",
+    "Relax in the living room with a pull-out sofa, two arm chairs and a 55\" Smart TV, mix a drink at the bar area, or work from the dining nook or dedicated bedroom desk. The Augusta Riverwalk and Broadway Park are about a 5-minute walk away, with downtown dining nearby."
+  ],
+  highlights: ["Plush queen bed + pull-out sofa","Full kitchen with coffee station","Private stacked washer & dryer","Dedicated desk & high-speed Wi-Fi","Dedicated rear parking + free street parking","All utilities included"],
+  amenities: {
+    "Bedroom & Living": ["Queen bed with blackout curtains & ceiling fan","Sound machine, eye masks & plush robes","Pull-out sofa + two arm chairs","55\" Smart TV","Decorative fireplace","Books and reading material"],
+    "Kitchen & Dining": ["Full-size appliances","Refrigerator, freezer, microwave","Electric stove & oven","Drip coffee maker & coffee","Cookware, dishes & utensils","Dining nook for 2–4"],
+    "Work & Tech": ["Dedicated desk & workspace","High-speed Wi-Fi + ethernet","Charging stations & power strips","Nest thermostat"],
+    "Bath & Laundry": ["Tub/shower combination","Fresh towels & starter toiletries","Hair dryer","In-unit washer & dryer + starter supplies","Iron"],
+    "Safety & Access": ["Self check-in with smart lock","Ring doorbell","Exterior security cameras","Smoke & CO detectors","Fire extinguisher & first aid kit"],
+    "Outdoor & Parking": ["Covered front porch with bistro seating","Exterior night lighting","1 dedicated rear parking space","Free street parking"]
+  },
+  pets: "Pets considered case-by-case; max 2 pets. Up to 2 weeks: $75 · Over 2 weeks to 30 days: $100 · 30+ days: $130 + $200 deposit per pet.",
+  photos: [
+    ["Living","miso/Hosting-990820539740437287/original/20752aa6-fd4a-4246-ab28-31675b068220.jpeg"],
+    ["Living","miso/Hosting-990820539740437287/original/50f81ec5-b533-4880-8e90-95b62c1ec029.jpeg"],
+    ["Living","miso/Hosting-990820539740437287/original/9ec0e9d1-748f-4a8a-85ad-15516218d70c.jpeg"],
+    ["Bedroom","miso/Hosting-990820539740437287/original/f0008aeb-f6ab-4fae-a638-81dc29ed75c8.jpeg"],
+    ["Bedroom","miso/Hosting-990820539740437287/original/2bc1f181-46d8-4b7d-9887-e6fa2c1410e6.jpeg"],
+    ["Bedroom","miso/Hosting-990820539740437287/original/3b90d6de-95f8-4ce2-9989-d84ca65977f4.jpeg"],
+    ["Workspace","hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6OTkwODIwNTM5NzQwNDM3Mjg3/original/56baf9ab-8660-4ded-88ba-3c96d9282031.jpeg"],
+    ["Kitchen","miso/Hosting-990820539740437287/original/6a2e5a9f-8390-47ed-8bd3-57939fd8a61d.jpeg"],
+    ["Kitchen","miso/Hosting-990820539740437287/original/02373ea9-fd8f-436c-9b98-c1512a101d97.jpeg"],
+    ["Dining","miso/Hosting-990820539740437287/original/a44ab631-36de-4595-b250-b18d6b91f158.jpeg"],
+    ["Bathroom","miso/Hosting-990820539740437287/original/c1fa04b4-e4ed-467e-81c6-6cfa7d956459.jpeg"],
+    ["Laundry","miso/Hosting-990820539740437287/original/a26061b7-d102-4bd8-b9b0-ade1924dba84.jpeg"],
+    ["Exterior","miso/Hosting-990820539740437287/original/79bc349b-3b3d-4b8f-bde5-c7ca3b56e702.jpeg"],
+    ["Exterior","miso/Hosting-990820539740437287/original/229d31aa-1e80-47cb-8041-4dd2374ed2d5.jpeg"],
+    ["Exterior","miso/Hosting-990820539740437287/original/f64c970a-83a1-46d9-87a3-e623f1f30fe9.jpeg"]
+  ]
+},
+{
+  slug: "nomads-nook",
+  name: "The Nomad’s Nook",
+  short: "Nomad’s Nook",
+  beds: 1, baths: "1.5", unit: "Private side of a historic duplex", guests: 2, bedLabel: "1 Bedroom | 1.5 Bathrooms | Dedicated Office",
+  tagline: "A work-ready private apartment with a dedicated office, high-speed Wi-Fi and a large backyard.",
+  stay: ["short","mid"],
+  rating: "", reviewCount: 0, isNew: true,
+  airbnb: "https://www.airbnb.com/rooms/1659515481489278631",
+  furnishedFinder: "", // [PLACEHOLDER]
+  ideal: "Remote workers, traveling professionals, digital nomads and extended-stay guests. Sleeps 2.",
+  description: [
+    "Nomad’s Nook is a thoughtfully furnished private apartment in a well-maintained historic duplex — completely private, with no shared interior spaces. A dedicated den/office with a full-size desk and comfortable chair, high-speed Wi-Fi and all the comforts of home make it ideal for traveling professionals and extended stays.",
+    "Unwind in the bright living room, cook in the full kitchen with granite counters, and enjoy the large backyard. You’re about a 5-minute walk from the Augusta Riverwalk, with Broadway Park steps away."
+  ],
+  highlights: ["Private den/office with full-size desk","Queen bedroom with blackout curtains","Full bath + separate half bath","2 large TVs (living room & bedroom)","Large backyard + private rear parking","All utilities included"],
+  amenities: {
+    "Bedroom & Living": ["Queen bed with blackout curtains","Walk-in closet, closet & dresser","Extra pillows & blankets","Large TVs in living room & bedroom","Ceiling fan"],
+    "Kitchen & Dining": ["Full kitchen with granite countertops","Name-brand refrigerator, stove & oven","Microwave","Keurig + drip coffee maker","Dining for four","No dishwasher"],
+    "Work & Tech": ["Private den/office","Full-size desk & comfortable chair","High-speed Wi-Fi + ethernet","Nest thermostat"],
+    "Bath & Laundry": ["Full bathroom with tub","Separate half bath","Starter toiletries & hair dryer","In-unit stacked washer & dryer"],
+    "Safety & Access": ["Digital locks","Ring doorbell","Exterior security cameras & lighting","Smoke & CO alarms","Fire extinguisher & first aid kit"],
+    "Outdoor & Parking": ["Large backyard","Small shared porch","Private parking behind the property","Free street parking"]
+  },
+  pets: "Pets considered case-by-case. Non-refundable pet fee of $4 per pet, per night — capped at $300 for the first dog or cat and $500 total for a second pet.",
+  photos: [
+    ["Living","hosting/Hosting-1659515481489278631/original/b94eaffc-8e19-4cc5-83aa-2fdbced2144e.jpeg"],
+    ["Living","hosting/Hosting-1659515481489278631/original/45fbb015-73ec-4d74-9e93-5dcce5104894.jpeg"],
+    ["Living","hosting/Hosting-1659515481489278631/original/28f4c610-d575-4ccf-a4a7-1c4482a69ad9.jpeg"],
+    ["Office","hosting/Hosting-1659515481489278631/original/bec40cd4-a915-470b-88e4-870557326e0d.jpeg"],
+    ["Office","hosting/Hosting-1659515481489278631/original/56411613-43c0-4034-a2b2-70021eaee790.jpeg"],
+    ["Bedroom","hosting/Hosting-1659515481489278631/original/1aea370f-be8d-4920-8194-f9088db32943.jpeg"],
+    ["Bedroom","hosting/Hosting-1659515481489278631/original/f28b67d8-ddc8-4761-8280-7ac03e8e73d8.jpeg"],
+    ["Kitchen","hosting/Hosting-1659515481489278631/original/b50fdade-8502-4b21-a6de-122ec5ab313d.jpeg"],
+    ["Kitchen","hosting/Hosting-1659515481489278631/original/c366d830-e24b-433c-b24a-9976df46db20.jpeg"],
+    ["Dining","hosting/Hosting-1659515481489278631/original/3cd4748e-5ffc-426d-be2a-078b1b8e2a44.jpeg"],
+    ["Bathroom","hosting/Hosting-1659515481489278631/original/7197e2a1-c62c-4f2c-a63a-ac6f98db35c5.jpeg"],
+    ["Bathroom","hosting/Hosting-1659515481489278631/original/87814ead-6628-4578-bede-3af4d69461c0.jpeg"],
+    ["Laundry","hosting/Hosting-1659515481489278631/original/2e7cf8fb-cc49-45c5-9508-029eaeb9b2f3.jpeg"],
+    ["Exterior","hosting/Hosting-1659515481489278631/original/634b3653-9388-44d2-ba3d-ffdc31e13f63.jpeg"],
+    ["Exterior","hosting/Hosting-1659515481489278631/original/acbd3c9b-07fe-458e-ba23-0a8174a9f9e8.jpeg"],
+    ["Exterior","hosting/Hosting-1659515481489278631/original/3b56fc6f-9041-4d43-8597-ddf688dd5479.jpeg"]
+  ]
+},
+{
+  slug: "classic-rewind",
+  name: "The Classic Rewind",
+  short: "Classic Rewind",
+  beds: 1, baths: "1", unit: "Upper-level unit", guests: 4, bedLabel: "1 Bedroom | 1 Bathroom | Upper-Level Unit",
+  tagline: "A cozy, character-filled apartment blending vintage charm with everyday convenience.",
+  stay: ["short","mid"],
+  rating: "4.95", reviewCount: 20,
+  airbnb: "https://airbnb.com/h/classicrewind",
+  furnishedFinder: "", // [PLACEHOLDER]
+  ideal: "Traveling professionals, medical students, military personnel, couples and extended-stay guests. Ideal for 2; up to 4 for shorter stays (max 2 for 30+ days).",
+  description: [
+    "The Classic Rewind is a charming upper-level one-bedroom, one-bath apartment in historic Olde Town Augusta, thoughtfully designed with vintage-inspired décor, local artwork, handmade pottery and Masters-inspired touches.",
+    "Settle into the queen bedroom with a decorative fireplace and dedicated desk, stream on the 55\" Smart TV, and enjoy a full kitchen with a coffee station. Hosts can help with dining reservations, drivers and stocking your fridge."
+  ],
+  highlights: ["Queen bed + sleeper sofa","Desk & workstation in the bedroom","Fully equipped kitchen & coffee station","Private stacked washer & dryer","Dedicated rear parking + street parking","All utilities included"],
+  amenities: {
+    "Bedroom & Living": ["Queen bed, blackout curtains & ceiling fan","Decorative fireplace","Sleeper sofa + arm chair","55\" Smart TV","Small bar area","Exercise equipment"],
+    "Kitchen & Dining": ["Cookware, pots, pans & utensils","Refrigerator, freezer, microwave","Electric stove & oven","Drip coffee maker, toaster & blender","Dining area (doubles as workspace)"],
+    "Work & Tech": ["Dedicated desk & workstation","Wi-Fi + ethernet","Charging station","Nest thermostat"],
+    "Bath & Laundry": ["Full bathroom with tub","Shampoo, conditioner & body wash","Hair dryer","In-unit stacked washer & dryer","Iron, vacuum, broom & dustpan"],
+    "Safety & Access": ["Self check-in (lockbox) & digital locks","Ring doorbell","Exterior cameras & floodlights","Smoke & CO detectors","Fire extinguisher & first aid kit"],
+    "Outdoor & Parking": ["Large shared Victorian front porch","Bistro seating","1 dedicated rear parking space","Free street parking"]
+  },
+  pets: "Pets considered case-by-case. Over 2 weeks to 1 month: $100 · 30+ days: $130.",
+  photos: [
+    ["Living","miso/Hosting-1001600808878147837/original/19cbc45c-eb36-48c4-aca3-9984de5c9d97.jpeg"],
+    ["Living","miso/Hosting-1001600808878147837/original/04a01ed9-d10a-4bd9-8340-a3431a1de006.jpeg"],
+    ["Living","miso/Hosting-1001600808878147837/original/e5d151e4-f291-4624-ba38-b4d44b881128.jpeg"],
+    ["Bedroom","miso/Hosting-1001600808878147837/original/0c745618-9f8c-4893-a8f4-1b14c811a76b.jpeg"],
+    ["Bedroom","miso/Hosting-1001600808878147837/original/ba43bfff-d86b-48c8-a3c9-0491106137f4.jpeg"],
+    ["Workspace","hosting/Hosting-1001600808878147837/original/d87c63fc-d55c-48e5-b395-307796129979.jpeg"],
+    ["Kitchen","miso/Hosting-1001600808878147837/original/d61a896b-108a-44d0-b651-c6fc56727858.jpeg"],
+    ["Kitchen","miso/Hosting-1001600808878147837/original/909ea896-84e8-42f9-90f0-d3191ee90319.jpeg"],
+    ["Dining","miso/Hosting-1001600808878147837/original/10a2f28a-9fce-4040-ba3d-95ae9292afd1.jpeg"],
+    ["Bathroom","miso/Hosting-1001600808878147837/original/c2e3082b-bd77-40d5-a0d1-d83d95f6029b.jpeg"],
+    ["Bathroom","miso/Hosting-1001600808878147837/original/4a2707cb-a878-476b-ad2d-3c65498a4c5b.jpeg"],
+    ["Laundry","miso/Hosting-1001600808878147837/original/51e05d20-2958-4eb9-b422-eac2992168c3.jpeg"],
+    ["Exterior","miso/Hosting-1001600808878147837/original/a19ed1af-8660-4db9-9ef6-b5ec827bfa28.jpeg"],
+    ["Exterior","miso/Hosting-1001600808878147837/original/a8d712c4-29cf-4b31-8bb7-bc537de41c40.jpeg"],
+    ["Exterior","miso/Hosting-1001600808878147837/original/43bbfd3a-fcac-4ca5-a005-71c3152dee03.jpeg"]
+  ]
+},
+{
+  slug: "boho-bella",
+  name: "The Boho Bella",
+  short: "Boho Bella",
+  beds: 2, baths: "1", unit: "Lower-level unit", guests: 4, bedLabel: "2 Bedrooms | 1 Bathroom",
+  tagline: "A beautifully decorated, bohemian-inspired home with warm interiors and room to relax.",
+  stay: ["short","mid"],
+  rating: "5.0", reviewCount: 18,
+  masters: true,
+  airbnb: "https://airbnb.com/h/bohobella",
+  furnishedFinder: "", // [PLACEHOLDER]
+  ideal: "2–4 guests, families, traveling professionals and extended stays.",
+  description: [
+    "Boho Bella is a professionally designed and furnished home blending historic Augusta character with modern comfort. Tall windows, 10-foot ceilings and abundant natural light fill two bedrooms, a living room with a small bar, a dining area and a fully equipped kitchen with a dedicated coffee bar.",
+    "Enjoy front and private rear entrances, a large shared Victorian front porch and a dedicated parking spot at the door. The Augusta Riverwalk is about a 5-minute walk away, with downtown restaurants and museums nearby."
+  ],
+  highlights: ["Queen bedroom + full-size second bedroom","Desk/workspace in second bedroom","Dedicated laundry room, full-size W/D","Front + private rear entrances","Dedicated parking + free street parking","All utilities included"],
+  amenities: {
+    "Bedroom & Living": ["Queen bed, ceiling fan & blackout curtains","Full-size bed with decorative fireplace","Sound machines, sleep masks & robes","Sofa, swivel chair & extra seating","55\" Smart TV","Small bar area"],
+    "Kitchen & Dining": ["Cookware, utensils & starter supplies","Dedicated coffee bar","Refrigerator, freezer, microwave, toaster","Electric stove & oven","Dining table seats 4","No dishwasher or garbage disposal"],
+    "Work & Tech": ["Dedicated desk & workspace","Wi-Fi + ethernet","Charging stations, surge protectors","Nest thermostat"],
+    "Bath & Laundry": ["Bathtub","Towels, shampoo, conditioner & body wash","Hair dryer","Dedicated laundry room, full-size W/D","Iron & ironing board"],
+    "Safety & Access": ["Self check-in with digital locks","Ring doorbell","Exterior cameras & floodlights","Nest smoke & CO detectors","Fire extinguisher & first aid kit"],
+    "Outdoor & Parking": ["Large shared Victorian front porch","Bistro tables","1 dedicated rear parking space","Free street parking"]
+  },
+  pets: "Pets welcome subject to rules & fees. Up to 2 weeks: $75 · Over 2 weeks to 30 days: $100 · 30+ days: $130.",
+  photos: [
+    ["Living","miso/Hosting-965304012095874431/original/69889967-1ba8-492a-a375-4c21d897f508.jpeg"],
+    ["Living","miso/Hosting-965304012095874431/original/8afcf2b7-20f8-4164-94cc-62ee75beb57a.jpeg"],
+    ["Living","miso/Hosting-965304012095874431/original/07ff9e98-2cce-48fb-a7c1-45d445bd87a9.jpeg"],
+    ["Bedroom","miso/Hosting-965304012095874431/original/354a25e0-458d-4ed7-b678-e96b4ebfafd9.jpeg"],
+    ["Bedroom","miso/Hosting-965304012095874431/original/b24e0301-1074-4a11-ae58-a53816f5eb9b.jpeg"],
+    ["Bedroom","miso/Hosting-965304012095874431/original/bf00827a-5b15-4b60-8a9f-437c903a7496.jpeg"],
+    ["Bedroom","miso/Hosting-965304012095874431/original/ba690d1c-403a-4b7b-92f3-70b5a1a7e0fd.jpeg"],
+    ["Workspace","miso/Hosting-965304012095874431/original/cd3dd1fa-07a6-4e70-bd6a-2c6ff7773beb.jpeg"],
+    ["Kitchen","miso/Hosting-965304012095874431/original/4f2dbfc7-25e3-49b9-959e-c8bbbf1f51e9.jpeg"],
+    ["Kitchen","miso/Hosting-965304012095874431/original/0b716d25-5872-46e1-a39f-687bed23a22a.jpeg"],
+    ["Dining","miso/Hosting-965304012095874431/original/d75e9def-a8cd-4855-8b01-ccea7c78a688.jpeg"],
+    ["Bathroom","miso/Hosting-965304012095874431/original/4602609b-6ecf-4b53-805e-ee764116234d.jpeg"],
+    ["Bathroom","miso/Hosting-965304012095874431/original/9ad43236-7069-4cb9-a459-449ce8d25961.jpeg"],
+    ["Laundry","miso/Hosting-965304012095874431/original/90a568e4-96e6-4262-93aa-63e61dc77d77.jpeg"],
+    ["Exterior","miso/Hosting-965304012095874431/original/63d1eb48-566f-4ba5-99c9-4b90658cf523.jpeg"],
+    ["Exterior","miso/Hosting-965304012095874431/original/395fba52-5477-4b07-8c3f-2d403bbf799b.jpeg"],
+    ["Exterior","miso/Hosting-965304012095874431/original/07f33caf-7cc9-4cc6-9494-2748ecd85089.jpeg"]
+  ]
+},
+{
+  slug: "classy-victoria",
+  name: "The Classy Victoria",
+  short: "Classy Victoria",
+  beds: 2, baths: "1", unit: "Lower-level unit", guests: 4, bedLabel: "2 Bedrooms | 1 Bathroom | Lower-Level Unit",
+  tagline: "Gatsby-era elegance with timeless style and practical, modern amenities.",
+  stay: ["short","mid"],
+  rating: "5.0", reviewCount: 15,
+  airbnb: "https://airbnb.com/h/classyvictoria",
+  furnishedFinder: "", // [PLACEHOLDER]
+  ideal: "2–4 guests, extended stays, traveling professionals and select shorter stays.",
+  description: [
+    "Inspired by the elegance of the 1920s Gatsby era, The Classy Victoria is a professionally designed two-bedroom retreat in historic Olde Town Augusta. Ten-foot ceilings and large windows bring in abundant natural light, while local art, pottery and Masters-inspired touches make it feel like home.",
+    "A queen bedroom and a second bedroom with two twin beds, a cozy bar area, a 55\" Smart TV and a fully equipped kitchen with new appliances and a coffee bar make this an easy base for work or a getaway."
+  ],
+  highlights: ["Queen bedroom + 2 twin beds","10-foot ceilings & large windows","Kitchen with new appliances & coffee bar","Full-size washer & dryer","Dedicated rear parking + street parking","All utilities included"],
+  amenities: {
+    "Bedroom & Living": ["Queen bed, blackout curtains & ceiling fan","Second bedroom with 2 twin beds","Decorative fireplace","Robes, extra linens & luggage rack","Sofa, arm chair & cozy bar area","55\" Smart TV"],
+    "Kitchen & Dining": ["Fully equipped kitchen, new appliances","Dedicated coffee bar","Refrigerator, freezer, microwave, toaster","Electric stove & oven","Dining table seats 4 (doubles as workspace)"],
+    "Work & Tech": ["High-speed Wi-Fi + ethernet","Dining-table workspace","Bedside charging station","Digital thermostat"],
+    "Bath & Laundry": ["Tub/shower combination","Towels, shampoo, conditioner & body wash","Hair dryer","Dedicated laundry area, full-size W/D","Iron"],
+    "Safety & Access": ["Self check-in with smart lock","Ring doorbell","Exterior cameras & floodlights","Nest smoke & CO detectors","Fire extinguisher & first aid kit"],
+    "Outdoor & Parking": ["Large shared Victorian front porch","Bistro seating","Dedicated rear parking space","Free street parking"]
+  },
+  pets: "Maximum 1 approved pet per stay. Up to 2 weeks: $75 · Over 2 weeks to 30 days: $100 · 30+ days: $130. Long-term stays also require a $350 non-refundable pet deposit.",
+  photos: [
+    ["Living","miso/Hosting-999250578738751516/original/335ca607-078a-4850-934b-4a626934af3d.jpeg"],
+    ["Living","miso/Hosting-999250578738751516/original/cc921c34-77e6-42fc-9db3-86a88e3af0a4.jpeg"],
+    ["Living","miso/Hosting-999250578738751516/original/1064ce21-a06c-44d2-8466-92bc91299927.jpeg"],
+    ["Bedroom","miso/Hosting-999250578738751516/original/f6b9fdd4-a9df-49c4-b90a-05dac1195348.jpeg"],
+    ["Bedroom","miso/Hosting-999250578738751516/original/0deab1c8-c6af-435d-9209-6cb1c01909fb.jpeg"],
+    ["Bedroom","miso/Hosting-999250578738751516/original/02c09fb6-1dbf-4dcb-8215-7b31a58fd671.jpeg"],
+    ["Bedroom","miso/Hosting-999250578738751516/original/b4233067-8a9a-4830-92f6-27dfd266273f.jpeg"],
+    ["Kitchen","miso/Hosting-999250578738751516/original/a35a4b08-36ba-4447-804b-7d7566d44ea9.jpeg"],
+    ["Kitchen","miso/Hosting-999250578738751516/original/4b99857b-6588-4077-a7c0-e4d266ef7a20.jpeg"],
+    ["Dining","miso/Hosting-999250578738751516/original/9b28e928-9c39-4278-bb0c-65d75c4e9ee9.jpeg"],
+    ["Bathroom","miso/Hosting-999250578738751516/original/247447a2-78c5-4c84-97c5-e4e0081f5b4c.jpeg"],
+    ["Bathroom","miso/Hosting-999250578738751516/original/6772c5e7-cf30-4843-a67d-179e92e40268.jpeg"],
+    ["Laundry","miso/Hosting-999250578738751516/original/84bbc55d-ac5a-4a46-8c40-531f17a19f89.jpeg"],
+    ["Exterior","miso/Hosting-999250578738751516/original/93b5f2f7-1491-480c-b951-4170c555bc5d.jpeg"],
+    ["Exterior","miso/Hosting-999250578738751516/original/7d7ede4d-e6d7-4c41-9dd2-b25e51516147.jpeg"],
+    ["Exterior","miso/Hosting-999250578738751516/original/4aa21034-b535-4ff4-bc34-c0ea11c93c56.jpeg"]
+  ]
+}
+];
+
+/* Genuine guest reviews copied from the Airbnb listings (excerpts). Remove or add freely. */
+const REVIEWS = [
+  { name: "Christina", from: "Frederick, Maryland", date: "April 2026", prop: "The Boho Bella", text: "We had an amazing stay at Sandra’s place in Augusta during Masters week. The location truly couldn’t be better, super convenient, safe, and close to everything we needed." },
+  { name: "Colin", from: "Boston, Massachusetts", date: "April 2026", prop: "The Classic Rewind", text: "The place was very clean, and looked exactly as it did in the photos. Sandra was amazing, communicating every step of the way, and offering valuable insight on local attractions and how to handle Masters week." },
+  { name: "Julia", from: "Atlanta, Georgia", date: "July 2026", prop: "The Southern Pearl", text: "I have stayed at several Airbnbs in Augusta, and hers is by far the cleanest and safest. The parking in the back adds an extra sense of privacy and security." },
+  { name: "Ashley", from: "Tampa, Florida", date: "August 2025", prop: "The Boho Bella", text: "Sandra was a very attentive and helpful host. I enjoyed the privacy and security feature of the home… I will definitely be staying again and recommending to colleagues and friends." },
+  { name: "Stephanie", from: "Woodstock, Georgia", date: "September 2026", prop: "The Classic Rewind", text: "Sandra was a great host! Our employees that switched out and stayed in her home were pleased with their stay. They agreed it felt like home for a while." },
+  { name: "Jasmine", from: "Washington, Georgia", date: "May 2025", prop: "The Boho Bella", text: "Such an amazing stay. Anything I needed, the host made sure to make it happen or give me guidance to make it happen. 10/10." }
+];
+
+</script>
+<script>
+/* ===================== SISTER ROCK HOMES — APP ===================== */
+const $ = s => document.querySelector(s);
+const img = (p, w) => p ? (p.startsWith("http") ? p : IMG + p) + "?im_w=" + (w || 1200) : "";
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const byS = s => PROPERTIES.find(p => p.slug === s);
+const firstOf = (p, cat) => (p.photos.find(x => x[0] === cat) || p.photos[0])[1];
+
+const I = {
+  home:'<path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>',
+  sofa:'<path d="M4 11V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3M2 13a2 2 0 0 1 4 0v2h12v-2a2 2 0 0 1 4 0v5H2zM5 18v2M19 18v2"/>',
+  cal:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>',
+  wash:'<rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="13" r="4.5"/><path d="M7 6.5h2"/>',
+  pin:'<path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/>',
+  key:'<circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3M14 9l2 2"/>',
+  check:'<path d="M5 12.5l4.5 4.5L19 7"/>',
+  star:'<path fill="currentColor" stroke="none" d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/>',
+  bed:'<path d="M3 18V7M3 13h18v5M21 18v-3a3 3 0 0 0-3-3h-7v1M7 11a1.5 1.5 0 1 0 0-.1"/>',
+  kitchen:'<path d="M7 3v8M4 3v5a3 3 0 0 0 6 0V3M7 11v10M17 3c-2 0-3 2-3 6h3v12"/>',
+  wifi:'<path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r=".8" fill="currentColor"/>',
+  bath:'<path d="M4 12h16v3a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM6 12V5a2 2 0 0 1 4 0M7 20l-1 2M17 20l1 2"/>',
+  shield:'<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/>',
+  car:'<path d="M5 16V11l2-5h10l2 5v5M3 16h18v3H3zM7 19v2M17 19v2"/><circle cx="7.5" cy="13.5" r=".8"/><circle cx="16.5" cy="13.5" r=".8"/>',
+  moon:'<path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/>',
+  noSmoke:'<circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8M7 13h6M16 13h1"/>',
+  party:'<circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8M9 9l6 6"/>',
+  paw:'<circle cx="7" cy="10" r="1.8"/><circle cx="17" cy="10" r="1.8"/><circle cx="10" cy="6" r="1.8"/><circle cx="14" cy="6" r="1.8"/><path d="M12 12c-3 0-5 3.5-5 5.5 0 1.5 1.5 2 2.5 2s1.5-.5 2.5-.5 1.5.5 2.5.5 2.5-.5 2.5-2c0-2-2-5.5-5-5.5z"/>',
+  doc:'<path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h5"/>',
+  broom:'<path d="M14 3l-4 9M7 12h7l3 9H4z"/>',
+  mail:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>',
+  phone:'<path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/>',
+  clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  cart:'<path d="M3 4h2l2.5 11h11L21 7H6.5"/><circle cx="9" cy="19" r="1.5"/><circle cx="18" cy="19" r="1.5"/>',
+  cup:'<path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM17 10h1.5a2.5 2.5 0 0 1 0 5H17M8 3v3M12 3v3"/>',
+  med:'<rect x="3" y="3" width="18" height="18" rx="3"/><path d="M12 8v8M8 12h8"/>',
+  tree:'<path d="M12 22v-6M12 2l6 8h-3l4 6H5l4-6H6z"/>',
+  camera:'<path d="M3 8h4l2-3h6l2 3h4v12H3z"/><circle cx="12" cy="13" r="4"/>',
+  bag:'<path d="M5 8h14l-1 13H6zM9 8V6a3 3 0 0 1 6 0v2"/>',
+  flag:'<path d="M5 21V4M5 4h11l-2 4 2 4H5"/><circle cx="17" cy="19" r="1.3"/>',
+  desk:'<path d="M3 8h18M5 8v12M19 8v12M5 13h6M14 4h5v4h-5z"/>',
+  fb:'<path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v7h4v-7h3l1-4h-4V8a0 0 0 0 1 0 0z"/>',
+  ig:'<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/>',
+  share:'<circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/>',
+  link:'<path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/>'
+};
+const ic = (n, cls) => `<svg ${cls ? `class="${cls}"` : ""} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${I[n] || I.check}</svg>`;
+const amenIcon = g => ({ "Bedroom & Living": "bed", "Kitchen & Dining": "kitchen", "Work & Tech": "wifi", "Bath & Laundry": "bath", "Safety & Access": "shield", "Outdoor & Parking": "car" }[g] || "check");
+const ratingHTML = p => p.isNew ? `<div class="rating">${ic("star")}<b>New listing</b></div>` : (p.rating ? `<div class="rating">${ic("star")}<b>${p.rating}</b>&nbsp;· ${p.reviewCount} Airbnb reviews</div>` : "");
+
+/* ---------- shared pieces ---------- */
+function card(p) {
+  return `<article class="card fade" data-beds="${p.beds}" data-stay="${p.stay.join(" ")}">
+    <a class="card-img" href="#/property/${p.slug}" aria-label="View ${esc(p.name)}">
+      <img loading="lazy" src="${img(p.photos[0][1], 720)}" alt="${esc(p.name)} living room">
+      <span class="tag">${p.beds} Bedroom${p.beds > 1 ? "s" : ""}</span>${p.masters ? `<span class="tag gold">Masters Week</span>` : ""}
+    </a>
+    <div class="card-b">
+      <div class="meta">${esc(p.bedLabel)}</div>
+      <h3>${esc(p.name)}</h3>${ratingHTML(p)}
+      <p>${esc(p.tagline)}</p>
+      <div class="amen-mini">${p.highlights.slice(0, 4).map(h => `<span>${esc(h)}</span>`).join("")}</div>
+      <div class="card-btns"><a class="btn btn-primary btn-sm" href="#/property/${p.slug}">View Property</a><a class="btn btn-outline btn-sm" href="#/availability?p=${p.slug}">Check Availability</a></div>
+    </div></article>`;
+}
+function propOptions(sel) { return `<option value="">Select a property</option>` + PROPERTIES.map(p => `<option value="${esc(p.name)}" ${sel === p.slug ? "selected" : ""}>${esc(p.name)} — ${p.beds} BR / ${p.baths} BA</option>`).join("") + `<option value="Not sure yet">Not sure yet — help me choose</option>`; }
+function inquiryForm(sel, id, title) {
+  return `<form class="form-card" id="${id}" onsubmit="return sendInquiry(event,'${id}')" novalidate>
+    ${title ? `<h3 style="margin-bottom:18px">${title}</h3>` : ""}
+    <div class="row"><div class="field"><label for="${id}-name">Full name</label><input id="${id}-name" name="Name" required autocomplete="name"></div>
+    <div class="field"><label for="${id}-email">Email address</label><input id="${id}-email" name="Email" type="email" required autocomplete="email"></div></div>
+    <div class="row"><div class="field"><label for="${id}-phone">Phone number</label><input id="${id}-phone" name="Phone" type="tel" autocomplete="tel"></div>
+    <div class="field"><label for="${id}-prop">Property of interest</label><select id="${id}-prop" name="Property">${propOptions(sel)}</select></div></div>
+    <div class="row"><div class="field"><label for="${id}-in">Desired check-in</label><input id="${id}-in" name="Check-in" type="date"></div>
+    <div class="field"><label for="${id}-out">Desired check-out</label><input id="${id}-out" name="Check-out" type="date"></div></div>
+    <div class="row"><div class="field"><label for="${id}-g">Number of guests</label><select id="${id}-g" name="Guests"><option>1</option><option selected>2</option><option>3</option><option>4</option></select></div>
+    <div class="field"><label for="${id}-pets">Number of pets</label><select id="${id}-pets" name="Pets"><option>0</option><option>1</option><option>2</option></select></div></div>
+    <div class="field"><label for="${id}-purpose">Purpose of stay <span class="opt">(optional)</span></label><select id="${id}-purpose" name="Purpose"><option value="">Choose one</option><option>Work / traveling professional</option><option>Travel nurse / medical</option><option>Relocation</option><option>Visiting family or friends</option><option>Masters Tournament</option><option>Vacation / getaway</option><option>Other</option></select></div>
+    <div class="field"><label for="${id}-msg">Additional message</label><textarea id="${id}-msg" name="Message" placeholder="Tell us about your stay, pets, or any questions."></textarea></div>
+    <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center">Send Inquiry</button>
+    <div class="form-msg" role="status"></div>
+  </form>`;
+}
+function sendInquiry(e, id) {
+  e.preventDefault();
+  const f = document.getElementById(id), msg = f.querySelector(".form-msg");
+  const name = f.querySelector('[name="Name"]').value.trim(), email = f.querySelector('[name="Email"]').value.trim();
+  if (!name || !/^\S+@\S+\.\S+$/.test(email)) { msg.style.display = "block"; msg.textContent = "Please add your full name and a valid email address."; return false; }
+  const body = [...f.querySelectorAll("[name]")].map(el => `${el.name}: ${el.value || "-"}`).join("\n");
+  if (SITE.email) {
+    location.href = `mailto:${SITE.email}?subject=${encodeURIComponent("Stay inquiry — " + (f.querySelector('[name="Property"]').value || "Sister Rock Homes"))}&body=${encodeURIComponent(body)}`;
+    msg.textContent = "Thank you! Your email app should open with your inquiry ready to send. We'll reply as soon as possible.";
+  } else {
+    msg.textContent = "Thank you for your interest! Online inquiries are being set up — the business email will be connected soon.";
+  }
+  msg.style.display = "block"; return false;
+}
+function bookBtns(p) {
+  return (p.airbnb ? `<a class="btn btn-outline" href="${p.airbnb}" target="_blank" rel="noopener">Book on Airbnb</a>` : "") +
+         (p.furnishedFinder ? `<a class="btn btn-outline" href="${p.furnishedFinder}" target="_blank" rel="noopener">View on Furnished Finder</a>` : "");
+}
+const ctaBand = () => `<section class="cta" style="background-image:linear-gradient(rgba(45,50,40,.78),rgba(45,50,40,.78)),url('${img(PROPERTIES[4].photos[13][1], 1600)}')"><div class="wrap"><span class="eyebrow" style="color:var(--gold-l)">Plan your stay</span><h2>Have Questions? Let’s Find Your Perfect Stay.</h2><p>Tell us your dates and what you need — we’ll help match you with the right home.</p><div class="hero-btns" style="justify-content:center"><a class="btn btn-gold" href="#/availability">Inquire About Availability</a><a class="btn btn-light" href="#/contact">Contact Host</a></div></div></section>`;
+const houseRules = () => [
+  ["moon", "Quiet hours 10:00 PM – 8:00 AM"], ["party", "No parties, events or unauthorized guests"], ["noSmoke", "No smoking or vaping inside"],
+  ["paw", "Pet policies vary by property"], ["doc", "Extended stays may require a rental agreement"], ["broom", "Monthly cleaning required for long-term stays"],
+  ["key", `Check-in ${SITE.checkIn.toLowerCase()} · Check-out ${SITE.checkOut.toLowerCase()}`]
+].map(r => `<div class="rule">${ic(r[0])}<span>${r[1]}</span></div>`).join("");
+
+/* ---------- PAGES ---------- */
+const pages = {
+home() {
+  const heroImgs = PROPERTIES.map(p => [p.photos[0][1], p.name]);
+  return `
+  <section class="hero" aria-label="Featured homes">
+    ${heroImgs.map((h, i) => `<div class="hero-slide ${i ? "" : "on"}" style="background-image:url('${img(h[0], 1800)}')" data-cap="${esc(h[1])}"></div>`).join("")}
+    <div class="wrap hero-in">
+      <span class="eyebrow">Furnished rentals in Augusta, GA</span>
+      <h1>Your Home Away From Home in Augusta, Georgia</h1>
+      <p>Discover beautifully furnished spaces designed for comfort, convenience, and memorable stays. Whether you're visiting for work, relocation, or a relaxing getaway, Sister Rock Homes has a place for you.</p>
+      <div class="hero-btns"><a class="btn btn-gold" href="#/properties">Explore Our Properties</a><a class="btn btn-light" href="#/availability">Inquire About Availability</a></div>
+    </div>
+    <div class="hero-dots">${heroImgs.map((_, i) => `<button class="${i ? "" : "on"}" aria-label="Show slide ${i + 1}" onclick="goSlide(${i})"></button>`).join("")}</div>
+    <div class="hero-cap" id="heroCap">${esc(heroImgs[0][1])}</div>
+  </section>
+
+  <section><div class="wrap intro">
+    <div class="fade">
+      <span class="eyebrow">Welcome to Sister Rock Homes</span>
+      <h2>Boutique comfort in historic Olde Town Augusta</h2>
+      <p class="lead" style="margin-top:18px">Our five professionally designed, fully furnished homes sit in charming historic buildings near downtown Augusta and the Riverwalk. Each one blends Southern character — tall ceilings, decorative fireplaces, local art — with the conveniences you need for a short visit or an extended stay.</p>
+      <p class="lead" style="margin-top:12px">All utilities are included, every home has in-unit laundry and dedicated parking, and you’ll have a responsive Superhost looking after you from booking to checkout.</p>
+      <div class="stats"><div><b>5</b><span>Furnished homes</span></div><div><b>${SITE.hostStats.rating}★</b><span>Host rating on Airbnb</span></div><div><b>${SITE.hostStats.reviews}+</b><span>Guest reviews</span></div></div>
+    </div>
+    <div class="intro-img fade"><img src="${img(PROPERTIES[4].photos[0][1], 1000)}" alt="The Classy Victoria living room"><div class="badge"><b>Superhost</b><span>${SITE.hostStats.years} years hosting on Airbnb</span></div></div>
+  </div></section>
+
+  <section class="bg-cream"><div class="wrap center">
+    <span class="eyebrow">Why stay with us?</span><h2>Everything you need, already in place</h2>
+    <div class="features">
+      ${[["sofa","Fully Furnished Homes","Professionally designed and furnished, from linens and cookware to coffee bars."],
+         ["cal","Short-Term & Mid-Term Stays","Weekend visits, travel assignments, relocations and 30+ day stays."],
+         ["bed","Comfortable Living Spaces","Plush beds, blackout curtains, cozy living rooms and dedicated workspaces."],
+         ["wash","In-Unit Washer & Dryer","Private laundry in every home, with starter supplies provided."],
+         ["pin","Convenient Augusta Locations","Olde Town Augusta, minutes from downtown, the Riverwalk and area hospitals."],
+         ["key","Thoughtfully Equipped Properties","Self check-in, Ring doorbells, high-speed Wi-Fi and dedicated parking."]]
+        .map(f => `<div class="feat fade" style="text-align:left"><div class="ico">${ic(f[0])}</div><h4>${f[1]}</h4><p>${f[2]}</p></div>`).join("")}
+    </div></div></section>
+
+  <section><div class="wrap">
+    <div class="center"><span class="eyebrow">Our homes</span><h2>Five homes, each with its own personality</h2><p class="lead">Every home is fully furnished, includes all utilities, and welcomes short and extended stays.</p></div>
+    <div class="grid" style="margin-top:46px">${PROPERTIES.map(card).join("")}</div>
+  </div></section>
+
+  <section style="padding-top:0"><div class="wrap">${mastersBlock()}</div></section>
+
+  ${REVIEWS.length ? `<section class="bg-cream"><div class="wrap center"><span class="eyebrow">Guest reviews</span><h2>What our guests say</h2><p class="lead">Real reviews from guests who stayed with us on Airbnb.</p>
+    <div class="reviews">${REVIEWS.slice(0, 6).map(r => `<div class="rev fade" style="text-align:left"><p>${esc(r.text)}</p><b>${esc(r.name)} · ${esc(r.from)}</b><small>Stayed at ${esc(r.prop)} · ${esc(r.date)} · via Airbnb</small></div>`).join("")}</div></div></section>` : ""}
+  ${ctaBand()}`;
+},
+
+properties(q) {
+  return `<div class="phead"><div class="wrap"><span class="eyebrow">Our Properties</span><h1>Furnished Rentals in Augusta, GA</h1><p class="lead">Five fully furnished homes in historic Olde Town Augusta for short-term visits, mid-term stays and corporate housing.</p></div></div>
+  <section style="padding-top:20px"><div class="wrap">
+    <div class="filters" role="group" aria-label="Filter properties">
+      <button class="chip on" data-f="all">All Homes</button><button class="chip" data-f="b1">1 Bedroom</button><button class="chip" data-f="b2">2 Bedrooms</button>
+      <button class="chip" data-f="short">Short-Term Stays</button><button class="chip" data-f="mid">Mid-Term / 30+ Days</button><button class="chip" data-f="office">Dedicated Office</button>
+    </div>
+    <div class="grid" id="pgrid">${PROPERTIES.map(card).join("")}</div>
+    <div style="margin-top:70px">${mastersBlock()}</div>
+  </div></section>${ctaBand()}`;
+},
+
+property(slug) {
+  const p = byS(slug); if (!p) return pages.properties();
+  const g = p.photos;
+  return `<section style="padding:40px 0 20px"><div class="wrap">
+    <div class="crumb"><a href="#/">Home</a> / <a href="#/properties">Our Properties</a> / ${esc(p.name)}</div>
+    <div class="gallery">${[0, 3, 7, 10, g.length - 2].map(i => g[i] ? `<img src="${img(g[i][1], i ? 720 : 1400)}" alt="${esc(p.name)} — ${g[i][0]}" onclick="openLB('${p.slug}',${i})">` : "").join("")}
+      <button class="btn btn-light btn-sm all" style="background:rgba(0,0,0,.45)" onclick="openLB('${p.slug}',0)">${ic("camera")} View all ${g.length} photos</button></div>
+    <div class="thumbs" aria-label="Photo thumbnails">${g.map((x, i) => `<button onclick="openLB('${p.slug}',${i})" aria-label="Open ${x[0]} photo"><img loading="lazy" src="${img(x[1], 240)}" alt=""><span>${x[0]}</span></button>`).join("")}</div>
+
+    <div class="detail">
+      <div>
+        <span class="eyebrow">${esc(p.unit)} · Olde Town Augusta</span>
+        <h1 style="font-size:clamp(2.2rem,4vw,3.2rem)">${esc(p.name)}</h1>
+        ${ratingHTML(p)}
+        <div class="facts"><span>${p.beds} Bedroom${p.beds > 1 ? "s" : ""}</span><span>${p.baths} Bathroom${p.baths === "1" ? "" : "s"}</span><span>Up to ${p.guests} guests</span><span>${esc(p.unit)}</span><span>Short & extended stays</span></div>
+        ${p.masters ? `<div class="alert"><b>Masters Tournament week, ${SITE.mastersDates}.</b> Now accepting inquiries for Masters week, subject to availability. <a href="#/availability?p=${p.slug}">Inquire now →</a></div>` : ""}
+        <div class="block"><h3>About this home</h3>${p.description.map(d => `<p>${esc(d)}</p>`).join("")}<p><b>Ideal for:</b> ${esc(p.ideal)}</p></div>
+        <div class="block"><h3>Highlights</h3><ul class="hl">${p.highlights.map(h => `<li>${ic("check")}${esc(h)}</li>`).join("")}</ul></div>
+        <div class="block"><h3>Amenities</h3><div class="amen-groups">${Object.entries(p.amenities).map(([k, v]) => `<div class="amen-g"><h4>${ic(amenIcon(k))}${k}</h4><ul>${v.map(a => `<li>${esc(a)}</li>`).join("")}</ul></div>`).join("")}</div></div>
+        <div class="block"><h3>House rules</h3><div class="rules">${houseRules()}</div>
+          <div class="alert" style="margin-top:18px">${ic("paw").replace("<svg", '<svg style="width:18px;height:18px;vertical-align:-3px;margin-right:6px"')}<b>Pets at ${esc(p.short)}:</b> ${esc(p.pets)} Pet approval required before booking.</div></div>
+        <div class="block" id="inquire"><h3>Send an inquiry</h3><p>Share your dates and we’ll confirm availability and pricing for ${esc(p.name)}.</p>${inquiryForm(p.slug, "f-" + p.slug)}</div>
+      </div>
+      <aside class="side">
+        <h3>${esc(p.name)}</h3><div class="sub">${esc(p.bedLabel)}</div>
+        <p style="font-size:.9rem;color:var(--muted)">Rates vary by dates and length of stay. Send us your dates for a personalized quote.</p>
+        <a class="btn btn-primary" href="#/availability?p=${p.slug}">Request Availability</a>
+        <a class="btn btn-outline" href="#/contact">Contact Host</a>
+        ${bookBtns(p)}
+        <div class="note">Check-in ${SITE.checkIn.toLowerCase()} · Check-out ${SITE.checkOut.toLowerCase()}<br>All utilities included</div>
+      </aside>
+    </div>
+  </div></section>
+  <section class="bg-cream"><div class="wrap"><div class="center"><span class="eyebrow">You may also like</span><h2>More Sister Rock Homes</h2></div>
+    <div class="grid" style="margin-top:40px">${PROPERTIES.filter(x => x.slug !== slug).slice(0, 3).map(card).join("")}</div></div></section>`;
+},
+
+availability(q) {
+  const sel = q.get("p") || "";
+  return `<div class="phead"><div class="wrap"><span class="eyebrow">Check Availability</span><h1>Request Your Dates</h1><p class="lead">Tell us when you’d like to stay and we’ll personally confirm availability and pricing — usually faster than a booking engine.</p></div></div>
+  <section><div class="wrap two">
+    <div>${inquiryForm(sel, "f-avail", "Request Availability")}</div>
+    <div>
+      <h3>How it works</h3>
+      <ul class="hl" style="grid-template-columns:1fr;margin:18px 0 30px">
+        <li>${ic("check")}Choose a home and your preferred dates</li><li>${ic("check")}Let us know about guests, pets and length of stay</li>
+        <li>${ic("check")}We confirm availability, pricing and any rental agreement needed</li><li>${ic("check")}Prefer to book instantly? Use the property’s Airbnb page below</li></ul>
+      <h3 style="margin-bottom:14px">Book online</h3>
+      <div style="display:grid;gap:10px">${PROPERTIES.map(p => `<div class="rule" style="justify-content:space-between;align-items:center"><span><b>${esc(p.name)}</b><br><small style="color:var(--muted)">${esc(p.bedLabel)}</small></span><span style="display:flex;gap:8px;flex-wrap:wrap">${p.airbnb ? `<a class="btn btn-outline btn-sm" target="_blank" rel="noopener" href="${p.airbnb}">Book on Airbnb</a>` : ""}${p.furnishedFinder ? `<a class="btn btn-outline btn-sm" target="_blank" rel="noopener" href="${p.furnishedFinder}">Furnished Finder</a>` : ""}</span></div>`).join("")}</div>
+      <a class="btn btn-primary" style="margin-top:20px" href="#/contact">Contact Host</a>
+    </div>
+  </div></section>`;
+},
+
+about() {
+  return `<div class="phead"><div class="wrap"><span class="eyebrow">About Sister Rock Homes</span><h1>Thoughtfully Furnished. Comfortably Yours.</h1></div></div>
+  <section><div class="wrap intro">
+    <div class="fade">
+      <p class="lead" style="font-size:1.15rem;color:var(--char)">At Sister Rock Homes, we believe that every stay should feel welcoming, comfortable, and effortless. Our thoughtfully furnished rental homes in Augusta, Georgia, are designed to give guests the convenience of a fully equipped home with the flexibility of short-term and extended-stay accommodations.</p>
+      <p class="lead" style="margin-top:16px">Whether you're a traveling professional, relocating to the area, visiting loved ones, or exploring Augusta, we're here to help you find a space that feels just right.</p>
+      <div class="stats"><div><b>5</b><span>Homes in Olde Town</span></div><div><b>${SITE.hostStats.rating}★</b><span>Average guest rating</span></div><div><b>100%</b><span>Airbnb response rate</span></div></div>
+    </div>
+    <div class="intro-img fade"><img src="${img(PROPERTIES[3].photos[0][1], 1000)}" alt="The Boho Bella living room"><div class="badge"><b>Superhost</b><span>Premier, individualized service</span></div></div>
+  </div></section>
+  <section class="bg-cream"><div class="wrap"><div class="center"><span class="eyebrow">Our promise</span><h2>Hospitality in every detail</h2></div>
+    <div class="features">${[["home","Historic charm","Victorian-era buildings with 10-foot ceilings, tall windows and decorative fireplaces."],["key","Easy, private stays","Self check-in with digital locks, Ring doorbells and dedicated parking."],["cup","Thoughtful touches","Coffee bars, robes, sound machines, local art and Masters-inspired décor."],["desk","Ready for work","Dedicated workspaces, high-speed Wi-Fi and charging stations."],["clock","Quick responses","Fast, friendly communication before and during your stay."],["flag","Masters hosting","Help with dining reservations, drivers and pre-arrival fridge stocking."]].map(f => `<div class="feat fade"><div class="ico">${ic(f[0])}</div><h4>${f[1]}</h4><p>${f[2]}</p></div>`).join("")}</div></div></section>
+  ${SITE.showHostIntro ? `<section><div class="wrap intro"><div class="intro-img">${SITE.hostPhoto ? `<img src="${SITE.hostPhoto}" alt="Sandra McEwan, host">` : ""}</div><div><span class="eyebrow">Meet your host</span><h2>Sandra McEwan</h2><p class="lead" style="margin-top:16px">${esc(SITE.hostIntro)}</p></div></div></section>` : ""}
+  ${ctaBand()}`;
+},
+
+explore() {
+  const ph = `<span class="ph">Add verified listing</span>`;
+  const cats = [
+    ["cart", "Grocery & Essentials", [[ph, ""], [ph, ""], [ph, ""]]],
+    ["cup", "Restaurants & Coffee", [["Downtown Augusta restaurants & cafés", "Near Olde Town"], ["Broad Street dining & bars", ""], [ph, ""]]],
+    ["med", "Hospitals & Medical", [["Augusta University medical campus", ""], ["Area hospitals", ""], [ph, ""]]],
+    ["tree", "Parks & Outdoors", [["Augusta Riverwalk", "~5 min walk"], ["Augusta Common", ""], ["Pendleton King Park", ""], ["Broadway Park (near Nomad’s Nook)", ""]]],
+    ["camera", "Local Attractions", [["Augusta Museum of History", ""], ["Morris Museum of Art", ""], ["First Friday downtown (monthly)", ""], ["Arts in the Heart of Augusta (September)", ""]]],
+    ["bag", "Shopping", [["Augusta Market on the River", ""], ["Downtown shops & galleries", ""], [ph, ""]]],
+    ["flag", "Masters & Golf", [["Augusta National Golf Club", "~10–11 miles"], [`The Masters Tournament — ${SITE.mastersDates}`, ""], [ph, ""]]]
+  ];
+  return `<div class="phead"><div class="wrap"><span class="eyebrow">Explore Augusta</span><h1>Life in Olde Town Augusta</h1><p class="lead">Our homes sit in one of Augusta’s most historic neighborhoods along the Savannah River — tree-lined streets, preserved 19th-century homes, and downtown dining, arts and festivals close by.</p></div></div>
+  <section><div class="wrap">
+    <div class="map"><iframe title="Map of Olde Town Augusta, Georgia" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-81.985%2C33.455%2C-81.925%2C33.49&layer=mapnik&marker=33.4701%2C-81.9513"></iframe></div>
+    <p class="note" style="text-align:left">General area shown. Exact addresses are shared with confirmed guests.</p>
+    <div class="cats" style="margin-top:40px">${cats.map(c => `<div class="cat fade"><h4><span class="ico">${ic(c[0])}</span>${c[1]}</h4><ul>${c[2].map(i => `<li><span>${i[0]}</span><em>${i[1]}</em></li>`).join("")}</ul></div>`).join("")}</div>
+  </div></section>
+  <section style="padding-top:0"><div class="wrap">${mastersBlock()}</div></section>${ctaBand()}`;
+},
+
+"guest-info"() {
+  const faqs = [
+    ["What are check-in and check-out times?", `Check-in is ${SITE.checkIn.toLowerCase()} and check-out is ${SITE.checkOut.toLowerCase()}, with self check-in. Early check-in, late check-out and luggage storage may be available on request — please ask in advance.`],
+    ["Is parking available?", "Yes. Each home has a dedicated off-street parking space behind the property, and free street parking is also available."],
+    ["Do you allow pets?", "Pets are considered case-by-case and must be approved before booking. Fees and limits vary by home — see the pet fee table above and each property page."],
+    ["Can I stay for a month or longer?", "Yes — long-term stays are welcome. Stays of 30+ days require a short rental agreement and monthly cleaning, and some homes limit occupancy to 2 guests for 30+ day stays."],
+    ["Is cleaning included?", "Every home is professionally cleaned before arrival, and starter cleaning supplies, a vacuum, broom and dustpan are provided. Long-term stays include a required monthly cleaning."],
+    ["Are utilities included?", "Yes. All utilities and Wi-Fi are included. The only extra fees are the security deposit and any applicable pet fee."],
+    ["How do I book?", "Send an inquiry with your dates and we’ll confirm availability and pricing, or book directly through each home’s Airbnb page. Guests with few or no reviews may be asked for additional verification."],
+    ["Do you host for the Masters?", `Yes! We welcome Masters guests (${SITE.mastersDates}) and can help with dining reservations, private drivers and pre-arrival fridge stocking. Masters week books early.`]
+  ];
+  return `<div class="phead"><div class="wrap"><span class="eyebrow">Guest Information</span><h1>Policies, Pets & FAQ</h1><p class="lead">Everything you need to know before your stay. Policies may vary by property — please confirm details with us when you inquire.</p></div></div>
+  <section><div class="wrap">
+    <h2 style="margin-bottom:24px">House rules</h2><div class="rules">${houseRules()}</div>
+    <h2 style="margin:64px 0 10px">Pet policies</h2><p class="lead" style="margin-bottom:24px">Pets are welcome in select homes with prior approval. Please protect furniture and keep pets secured when unattended. Pet towels, waste bags and furniture covers are provided.</p>
+    <div style="overflow-x:auto"><table class="fees"><thead><tr><th>Length of stay</th><th>Standard pet fee*</th></tr></thead><tbody><tr><td>Up to 2 weeks</td><td>$75</td></tr><tr><td>Over 2 weeks through 30 days</td><td>$100</td></tr><tr><td>30+ days</td><td>$130</td></tr></tbody></table></div>
+    <p class="note" style="text-align:left">*Applies to participating homes. Property-specific rules:</p>
+    <div class="cats" style="margin-top:18px">${PROPERTIES.map(p => `<div class="cat"><h4 style="font-size:1.25rem"><span class="ico">${ic("paw")}</span>${esc(p.name)}</h4><p style="font-size:.9rem;color:var(--muted)">${esc(p.pets)}</p></div>`).join("")}</div>
+    <h2 style="margin:64px 0 24px">Frequently asked questions</h2>
+    <div class="faq">${faqs.map(f => `<details><summary>${f[0]}</summary><p>${f[1]}</p></details>`).join("")}</div>
+  </div></section>${ctaBand()}`;
+},
+
+contact() {
+  const soc = Object.entries(SITE.social).filter(s => s[1]);
+  return `<div class="phead"><div class="wrap"><span class="eyebrow">Contact</span><h1>Have Questions? Let’s Find Your Perfect Stay.</h1><p class="lead">Reach out about availability, extended stays, corporate housing or Masters week — we’re happy to help.</p></div></div>
+  <section><div class="wrap two">
+    <div>${inquiryForm("", "f-contact", "Send us a message")}</div>
+    <div>
+      <h3>Get in touch</h3>
+      <ul class="contact-list">
+        <li><span class="ico">${ic("mail")}</span><span><b>Email</b><br>${SITE.email ? `<a href="mailto:${SITE.email}">${SITE.email}</a>` : `<span class="ph">Business email coming soon</span>`}</span></li>
+        <li><span class="ico">${ic("phone")}</span><span><b>Phone</b><br>${SITE.phone ? `<a href="tel:${SITE.phone.replace(/[^\d+]/g, "")}">${SITE.phone}</a>` : `<span class="ph">Phone number coming soon</span>`}</span></li>
+        <li><span class="ico">${ic("clock")}</span><span><b>Response time</b><br>${SITE.responseTime ? esc(SITE.responseTime) : `<span class="ph">Response time to be confirmed</span>`}</span></li>
+        <li><span class="ico">${ic("pin")}</span><span><b>Location</b><br>Olde Town Augusta, Georgia</span></li>
+      </ul>
+      ${soc.length ? `<h3 style="margin-bottom:10px">Follow along</h3><div class="share" style="margin-bottom:24px">${soc.map(s => `<a href="${s[1]}" target="_blank" rel="noopener" aria-label="${s[0]}" style="border-color:var(--beige);color:var(--char)">${ic(s[0] === "facebook" ? "fb" : "ig")}</a>`).join("")}</div>` : ""}
+      <div class="cat"><h4 style="font-size:1.3rem">Prefer to book online?</h4><p style="font-size:.9rem;color:var(--muted);margin-bottom:12px">Each home is listed on Airbnb.</p>${PROPERTIES.filter(p => p.airbnb).map(p => `<a class="btn btn-outline btn-sm" style="margin:0 6px 8px 0" target="_blank" rel="noopener" href="${p.airbnb}">${esc(p.short)}</a>`).join("")}</div>
+    </div>
+  </div></section>`;
+},
+
+privacy() { return legal("Privacy Policy", [["Information we collect", "When you submit an inquiry we collect the details you provide, such as your name, email, phone number, dates, guest and pet counts, and message."], ["How we use it", "We use your information only to respond to your inquiry, confirm availability, and manage your stay. We do not sell your information."], ["Third-party platforms", "If you book through Airbnb or another platform, that platform’s privacy policy also applies."], ["Contact", "Questions about this policy? Contact us using the details on our Contact page."], ["Note", "[PLACEHOLDER — have this policy reviewed before launch.]"]]); },
+terms() { return legal("Terms of Use", [["Website content", "Property descriptions, photos and amenities are provided for information and may change. Availability and rates are confirmed only in writing by Sister Rock Homes or the booking platform."], ["Inquiries", "Submitting an inquiry does not create a reservation. Bookings are subject to approval, verification, house rules and any applicable rental agreement."], ["House rules", "Guests agree to follow the house rules and pet policies for their property, including quiet hours, no parties and no smoking."], ["Note", "[PLACEHOLDER — have these terms reviewed before launch.]"]]); }
+};
+function legal(t, items) { return `<div class="phead"><div class="wrap"><h1>${t}</h1></div></div><section><div class="wrap legal" style="max-width:820px">${items.map(i => `<h3>${i[0]}</h3><p>${i[1]}</p>`).join("")}</div></section>`; }
+function mastersBlock() {
+  const b = PROPERTIES.find(p => p.masters) || PROPERTIES[0];
+  return `<div class="masters fade"><img src="${img(firstOf(b, "Exterior"), 1200)}" alt="${esc(b.name)} front porch">
+    <div class="masters-b"><span class="eyebrow">Seasonal feature</span><h2>Masters Tournament Week</h2><p><b>${SITE.mastersDates}.</b> Our Olde Town homes are about 10–11 miles from Augusta National — a comfortable, private home base for patrons, players’ families and corporate groups. We can help with dining reservations, drivers and pre-arrival fridge stocking. Paired units are available for larger groups. Inquiries welcome, subject to availability.</p>
+    <div class="hero-btns"><a class="btn btn-gold" href="#/availability?p=${b.slug}">Inquire About Masters Week</a><a class="btn btn-light" href="#/property/${b.slug}">View ${esc(b.short)}</a></div></div></div>`;
+}
+
+/* ---------- ROUTER & BEHAVIOR ---------- */
+let slideT;
+function render() {
+  const h = location.hash.replace(/^#\/?/, "") || "";
+  const [path, qs] = h.split("?"); const q = new URLSearchParams(qs || "");
+  const [page, arg] = path.split("/");
+  const fn = page === "property" ? () => pages.property(arg) : (pages[page] || pages.home);
+  $("#main").innerHTML = fn(q);
+  document.querySelectorAll("#menu a").forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#/" + page || (page === "property" && a.getAttribute("href") === "#/properties")));
+  const p = page === "property" && byS(arg);
+  document.title = p ? `${p.name} | Furnished Rental in Augusta, GA | Sister Rock Homes` : "Sister Rock Homes | Furnished Rentals in Augusta, GA";
+  $("#menu").classList.remove("open"); window.scrollTo(0, 0);
+  clearInterval(slideT); if (!page) slideT = setInterval(() => goSlide((cur + 1) % PROPERTIES.length), 6000), cur = 0;
+  setupFilters(); observe(); fixImgs();
+}
+let cur = 0;
+function goSlide(i) { const s = document.querySelectorAll(".hero-slide"), d = document.querySelectorAll(".hero-dots button"); if (!s.length) return; s[cur].classList.remove("on"); d[cur].classList.remove("on"); cur = i; s[i].classList.add("on"); d[i].classList.add("on"); $("#heroCap").textContent = s[i].dataset.cap; }
+function setupFilters() {
+  document.querySelectorAll(".chip").forEach(c => c.onclick = () => {
+    document.querySelectorAll(".chip").forEach(x => x.classList.remove("on")); c.classList.add("on");
+    const f = c.dataset.f;
+    document.querySelectorAll("#pgrid .card").forEach((el, i) => {
+      const p = PROPERTIES[i];
+      const show = f === "all" || (f === "b1" && p.beds === 1) || (f === "b2" && p.beds === 2) || (f === "office" && p.slug === "nomads-nook") || p.stay.includes(f);
+      el.style.display = show ? "" : "none";
+    });
+  });
+}
+function observe() { const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: .12 }); document.querySelectorAll(".fade").forEach(el => io.observe(el)); }
+function fixImgs() { document.querySelectorAll("main img").forEach(i => i.addEventListener("error", () => { i.classList.add("noimg"); i.removeAttribute("src"); }, { once: true })); }
+function toggleMenu() { const m = $("#menu"); m.classList.toggle("open"); $(".burger").setAttribute("aria-expanded", m.classList.contains("open")); }
+let lbP, lbI;
+function openLB(slug, i) { lbP = byS(slug); lbI = i; showLB(); $("#lb").classList.add("open"); document.body.style.overflow = "hidden"; }
+function showLB() { const x = lbP.photos[lbI]; $("#lbImg").src = img(x[1], 1600); $("#lbImg").alt = lbP.name + " — " + x[0]; $("#lbCap").textContent = `${lbP.name} · ${x[0]} · ${lbI + 1} / ${lbP.photos.length}`; }
+function stepLB(d) { lbI = (lbI + d + lbP.photos.length) % lbP.photos.length; showLB(); }
+function closeLB() { $("#lb").classList.remove("open"); document.body.style.overflow = ""; }
+document.addEventListener("keydown", e => { if (!$("#lb").classList.contains("open")) return; if (e.key === "Escape") closeLB(); if (e.key === "ArrowRight") stepLB(1); if (e.key === "ArrowLeft") stepLB(-1); });
+function footer() {
+  $("#yr").textContent = new Date().getFullYear();
+  $("#footProps").innerHTML = PROPERTIES.map(p => `<li><a href="#/property/${p.slug}">${esc(p.name)}</a></li>`).join("");
+  if (SITE.email) $("#footEmail").innerHTML = `<a href="mailto:${SITE.email}">${SITE.email}</a>`;
+  if (SITE.phone) $("#footPhone").textContent = SITE.phone;
+  const soc = Object.entries(SITE.social).filter(s => s[1]).map(s => `<a href="${s[1]}" target="_blank" rel="noopener" aria-label="${s[0]}">${ic(s[0] === "facebook" ? "fb" : "ig")}</a>`).join("");
+  $("#share").innerHTML = soc + `<button aria-label="Share this page" onclick="sharePage()">${ic("share")}</button><a aria-label="Share on Facebook" href="#" onclick="this.href='https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href)" target="_blank" rel="noopener">${ic("fb")}</a>`;
+}
+function sharePage() { if (navigator.share) navigator.share({ title: document.title, url: location.href }).catch(() => {}); else if (navigator.clipboard) navigator.clipboard.writeText(location.href).then(() => alert("Link copied!")); }
+window.addEventListener("hashchange", render);
+footer(); render();
+
+</script>
+</body>
+</html>

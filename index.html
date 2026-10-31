@@ -519,7 +519,7 @@ const REVIEWS = [
 <script>
 /* ===================== SISTER ROCK HOMES — APP ===================== */
 const $ = s => document.querySelector(s);
-const img = (p, w) => p ? (p.startsWith("http") ? p : IMG + p) + "?im_w=" + (w || 1200) : "";
+const img = (p, w) => { if (!p) return ""; if (p.startsWith("http")) return p; const ok = [240, 720, 1200, 1440, 1920]; const s = ok.find(x => x >= (w || 1200)) || 1920; return IMG + p + "?im_w=" + s; };
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const byS = s => PROPERTIES.find(p => p.slug === s);
 const firstOf = (p, cat) => (p.photos.find(x => x[0] === cat) || p.photos[0])[1];
